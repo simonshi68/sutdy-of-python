@@ -14,8 +14,7 @@ data=f.read()                  #data也是变量
 pring(data)					   #打印
 line=f.readline()
 print(line)
-lst=f.readlines()
-print(lst)
+l
 
 2.文件写入：
 打开文件
@@ -81,3 +80,5 @@ print(lst)
      f.close() # 或者其他do something 的语句，一般是程序里的
   else: #如果前面没有出现异常，则执行else后面缩进的语句
      #do something
+
+pickle模块：
