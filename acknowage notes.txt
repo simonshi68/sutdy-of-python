@@ -1,0 +1,8 @@
+crossin.com>python零基础入门
+8-5：文件读写
+读文件：
+语法：
+f=open('python.txt')		#打开文件成为一个名为f的对象
+f.read()					#读取上面已经打开的文件
+crossin的编程教室			#文件内容显示出来了
+f.close()					#关闭上面打开的这个文件
