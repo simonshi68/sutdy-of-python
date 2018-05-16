@@ -81,4 +81,21 @@ l
   else: #如果前面没有出现异常，则执行else后面缩进的语句
      #do something
 
-pickle模块：
+pickle模块：https://mp.weixin.qq.com/s?__biz=MjM5MDEyMDk4Mw==&mid=200306654&idx=1&sn=db94fc7e790f6371729fe5f7ba601284
+     
+	 写入：
+	 import pickle
+	 test_data = ['Save me!', 123.456, True]
+     f = file('test.data', 'w')      #以写入方式打开文件，python3要以二进制方式写入，所以参数应该是wb  
+     pickle.dump(test_data, f)       #dump方法倒入数据到文件中。
+     f.close()
+	 读取：
+	 import pickle
+     f = file('test.data')
+     test_data = pickle.load(f)       #load方法
+     f.close()
+     print test_data
+
+Tips:python3有一个以C语言写的模块cPickle,速度快1万倍
+
+	 
